@@ -1,33 +1,13 @@
-@import url('normalize.css');
-
 .main{
 	width: 5%;
-	margin: 0 auto;
-	position: relative;
-}
-
-.container{
-	width: 100%;
+	margin: auto;
 	position: fixed;
 }
 
-
-.container > header{
-	margin: 10px;
-	padding: 20px 10px 10px 10px;
+container{
+	width: 100%;
 	position: relative;
-	display: block;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    text-align: center;
 }
-
-
-.container > header h1,
-.container > header h2 {
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
-
 
 .cs-text {
 	width: 760px;
@@ -55,14 +35,14 @@
 .cs-text-cut span {
 	display: block;
 	line-height: 145px;
-	color: rgb(14, 14, 13);
+	color: rgba(212, 212, 212, 0.685);
 	font-size: 190px;
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 6px;
 	font-family: 'Amarante', cursive;
-	text-shadow: 7px 2px 0 rgba(189, 235, 212, 0.3);
+	text-shadow: 7px 2px 0 rgb(9, 10, 10);
 }
 
 .cs-text-cut:last-child span {
