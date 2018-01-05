@@ -4,14 +4,15 @@
 <head>
         <meta charset="utf-8" />
         <meta name="author" content="DR-MT">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cine al Mmmáximo</title>
-        <link rel="stylesheet" type="text/css" href="./libs/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="./libs/estilofondo.css">
-        <script src="./libs/jquery.min.js"></script>
-        <script src="./libs/bootstrap/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./libs/css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Sancreek|Raleway:100' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Sancreek|Raleway:100' rel='stylesheet' type='text/css'
+        />
         <link href='http://fonts.googleapis.com/css?family=Amarante' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.lettering.js"></script>
@@ -21,38 +22,37 @@
 </head>
 
 <body>
-        <div class="container-fluid">
-                <div class="row">
-                        <div class="col-md-12">
-                                <section class="main">
-                                        <h2 class="cs-text">
-                                                <span class="cs-text-cut">Cine</span>
-                                                <span class="cs-text-mid">Máximo</span>
-                                                <span class="cs-text-cut">Cine</span>
-                                        </h2>
-                                </section>
-                        </div>
+        <header>
+                <div class="contenedor" id="uno">
+                        <img class="icon" src="img/nota.png">
+                        <p class="btn" onclick="location='registro.html'">Registrarse</p>
+
                 </div>
+        
+                <div class="contenedor" id="dos">
+                        <img class="icon" src="img/icono2.png">
+                        <p class="texto">Ingresar</p>
+                </div>
+                <div class="contenedor" id="tres">
+                        <img class="icon" src="img/icono3.png">
+                        <p class="texto">Cines</p>
+                </div>
+
+        </header>
+
+        <section class="main">
+                <h2 class="cs-text">
+                        <span class="cs-text-cut">Cine</span>
+                        <span class="cs-text-mid">Máximo</span>
+                        <span class="cs-text-cut">Cine</span>
+                </h2>
 
                 <script>
                         $(document).ready(function () {
                                 $(".cs-text-cut").lettering('words');
                         });
                 </script>
-                <div class="row">
-                        <div class="col-md-12">
-                                <div class="btn-group btn-group-sm">
-                                        <button type="button" class="btn btn-warning" onclick="location='registro.html'">
-                                                REGISTRARSE
-                                        </button>
-
-                                        <button type="button" class="btn btn-success" onclick="">
-                                                INGRESAR
-                                        </button>
-                                </div>
-                        </div>
-                </div>
-        </div>
+        </section>
 </body>
 
 </html>

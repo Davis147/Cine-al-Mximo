@@ -4,14 +4,14 @@
 	position: fixed;
 }
 
-container{
+.container{
 	width: 100%;
 	position: relative;
 }
 
 .cs-text {
-	width: 760px;
-	margin: 0px auto 30px;
+	width: 360px;
+	margin: -90px 0px;
 	cursor: default;
 }
 
@@ -35,7 +35,7 @@ container{
 .cs-text-cut span {
 	display: block;
 	line-height: 145px;
-	color: rgba(212, 212, 212, 0.685);
+	color: rgba(57, 218, 79, 0.685);
 	font-size: 190px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -51,16 +51,15 @@ container{
 
 .cs-text-mid {
 	font-family: 'Amarante', sans-serif;
-	font-weight: 100;
 	text-transform: uppercase;
-	font-size: 165px;
+	font-size: 125px;
 	letter-spacing: 0px;
-	line-height: 100px;
-	text-indent: 100px;
-	position: absolute;
+	line-height: 380px;
+	text-indent: 5px;
+	position: absolute;;
 	top: 54%;
 	margin-top: -25px;
-	color: rgb(248, 44, 8);
+	color: rgba(70, 24, 238, 0.842);
 	text-shadow: 0 0 0 rgba(17, 17, 17, 0.9);
 	opacity: 0;
 	-webkit-transform: scale(0.5);
@@ -105,4 +104,10 @@ container{
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
+}
+
+@media (max-width:480px) {
+	.main, .cs-text, .cs-text-mid, .cs-text-cut{
+        width: 100%;
+    }
 }
